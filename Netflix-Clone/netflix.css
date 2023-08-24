@@ -1,0 +1,173 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.login input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #b2070e;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    animation: fadeSlideUp 1s ease;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* New sections styling */
+
+/* Featured Titles */
+.featured {
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Popular Categories */
+.categories {
+    background-color: #1e1e1e;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Latest Releases */
+.latest {
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.latest h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* What Our Users Say */
+.testimonials {
+    background-color: #1e1e1e;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+/* Previous CSS styles go here */
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%; /* Adjust the width percentage */
+    height: 50vh; /* Adjust the height percentage */
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-video video {
+    min-width: 100%; /* Adjust the minimum width percentage */
+    min-height: 100%; /* Adjust the minimum height percentage */
+    object-fit: cover;
+}
+    }
+}
